@@ -24,7 +24,7 @@ export default function Login() {
 
 		if (isValidEmail) {
 			if (isValidPassword) {
-				navigate('/grades-calc');
+				navigate('/grades');
 			}
 			isShowLoginError(true);
 		} else {
@@ -32,7 +32,7 @@ export default function Login() {
 		}
 	};
 
-	return <div>
+	return <>
 		<div className="card">
 
 			<div className="card-body bg-info">
@@ -60,5 +60,5 @@ export default function Login() {
 			</div>
 
 		</div>
-	</div>;
+	</>;
 }
