@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Grades() {
+export default function Grades({email, setEmail}) {
 	const [Quiz, setQuizScore] = useState(50);
 	const [LabActivity, setLabActivityScore] = useState(50);
 	const [FinalExam, setFinalExamScore] = useState(50);
@@ -48,7 +48,7 @@ export default function Grades() {
 		setShowResults(true);
 	};
 
-	return <div>
+	return <>
 		<div className="card">
 
 			<div className="card-body bg-info">
@@ -81,5 +81,5 @@ export default function Grades() {
 			</div>}
 
 		</div>
-	</div>;
+	</>;
 }
